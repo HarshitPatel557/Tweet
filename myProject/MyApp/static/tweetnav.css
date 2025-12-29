@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1da1f2; /* Twitter blue */
+    padding: 12px 20px;
+    color: white;
+}
+
+/* Container */
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Content */
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Search */
+.search-form {
+    display: flex;
+    gap: 6px;
+}
+
+.search-form input {
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-form button {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: #1da1f2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #e8f5fd;
+}
+
+/* Buttons */
+.btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: #1da1f2;
+}
+
+.logout-btn {
+    background-color: white;
+    color: #1da1f2;
+}
+
+.logout-btn:hover {
+    background-color: #e8f5fd;
+}
+
+/* Auth links wrapper */
+.auth-links {
+    display: flex;
+    gap: 10px;
+}

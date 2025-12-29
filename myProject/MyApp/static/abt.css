@@ -1,0 +1,57 @@
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .mission, .values {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 300px;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .member {
+            flex: 1 1 250px;
+            text-align: center;
+        }
+
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        @media(max-width: 768px) {
+            .mission, .values, .team {
+                flex-direction: column;
+                align-items: center;
+            }
+        }

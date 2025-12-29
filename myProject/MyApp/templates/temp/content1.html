@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+My Home Page
+{% endblock  %}
+
+{% block content %}
+    <header>
+        <nav>
+            <div class="logo"><h2>EduLearn</h2></div>
+            <div class="menu">
+                <a href="#features">Features</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#signup">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+<h1>Home page</h1>
+
+    <section class="hero">
+        <h1>Learn Anytime, Anywhere</h1>
+        <p>Interactive courses, expert instructors, and a community of learners at your fingertips.</p>
+        <button onclick="document.getElementById('signup').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+    </section>
+
+    <section id="features">
+        <h2 style="text-align:center; margin-bottom:50px;">Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals and certified educators.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Flexible Learning</h3>
+                <p>Access courses anytime and learn at your own pace.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Certifications</h3>
+                <p>Earn recognized certificates to showcase your skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 style="text-align:center; margin-bottom:50px;">What Our Students Say</h2>
+        <div class="testimonial">
+            <p>"EduLearn transformed the way I learn online. Highly recommended!"</p>
+            <h4>- Sarah M.</h4>
+        </div>
+        <div class="testimonial">
+            <p>"The courses are well-structured and engaging. I love it!"</p>
+            <h4>- James T.</h4>
+        </div>
+    </section>
+
+    <section id="signup">
+        <h2 style="text-align:center; margin-bottom:20px;">Sign Up for Free</h2>
+        <form style="max-width:500px; margin:auto; display:flex; flex-direction:column; gap:15px;">
+            <input type="text" placeholder="Full Name" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+            <input type="email" placeholder="Email Address" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+            <button type="submit" style="padding:15px; background:#4CAF50; color:white; border:none; border-radius:5px; cursor:pointer;">Sign Up</button>
+        </form>
+    </section>
+
+{% endblock  %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Tweets{% endblock  %}
+
+{% block content %}
+
+<div class="hero">
+    <h1>Welcome to Tweets</h1>
+    <h2>
+        <form method = "post" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+        <button> Delete Tweet</button>
+        
+        Cancle Tweet
+        <a href="{% url 'tweet_list' %}">Back to Tweet list</a>  
+
+        </form>
+    </h2>
+</div>
+
+{% endblock  %}

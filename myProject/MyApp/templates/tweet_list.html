@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}Tweets{% endblock  %}
+
+{% block content %}
+
+<div class="hero">
+    <h1>Welcome to Tweets</h1>
+    <a href="{% url 'tweet_create' %}"><button>Create a tweet</button></a>
+</div>
+<div class="section features">
+    {% for tweet in tweets %}
+        <div class="feature-card">
+            <p><b>@{{tweet.user.username}}</b></p>
+            <img src="{{ tweet.photo.url }}" alt="">
+                <div class="testimonial">
+                    <strong> {{tweet.title}} </strong>
+                    <p>{{tweet.text}}</p>
+                    {% if tweet.user == user %}
+                    <a href="{% url 'tweet_edit' tweet.id %}">Edit</a>
+                    <a href="{% url 'tweet_delete' tweet.id %}">Delete</a>
+
+                    {% endif %}
+                </div>
+        </div>
+        {% empty %}
+        <h2 style="color: red;">No Data Found!</h1>
+    {% endfor %}
+</div>
+{% endblock  %}

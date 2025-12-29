@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}Form{% endblock  %}
+
+{% load static %}
+{% block content %}
+
+<div class="form-box">    
+    <div class="my-form">
+        {% comment %} <form method="get"> {% endcomment %}
+        <form method="post">
+            {% csrf_token %}
+            <label for="">Subjact 1</label>
+            <input type="text" name="s1" value="{{ s1 }}">
+            <label for="">Subjact 2</label>
+            <input type="text" name="s2" value="{{ s2 }}">
+            <label for="">Subjact 3</label>
+            <input type="text" name="s3" value="{{ s3 }}">
+            <label for="">Subjact 4</label>
+            <input type="text" name="s4" value="{{ s4 }}">
+            <label for="">Subjact 5</label>
+            <input type="text" name="s5" value="{{ s5 }}">
+            
+            <button type="submit">Submit</button> 
+            <h4>Output</h4>
+            <input type="text"value= "{{ total }}">
+            <input type="text"value= "{{ per }}">
+            <input type="text"value= "{{ div }}">
+        </form>
+    </div>
+</div>
+{% endblock %}

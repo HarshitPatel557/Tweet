@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block title %}
+About Page
+{% endblock  %}
+
+{% block content %}
+<style href="{% static 'abt.css' %}"></style>
+<section class="hero">
+        <h1>About EduLearn {{ans}}</h1>
+        <p>At EduLearn, we are passionate about providing high-quality, interactive online learning experiences that empower students, professionals, and lifelong learners to achieve their goals.</p>
+    </section>
+
+
+    <section class="mission">
+        <h2 style="text-align:center; margin-bottom:50px;">Our Mission</h2>
+        <div class="card">
+            <h3>Accessible Education</h3>
+            <p>We aim to make learning accessible to everyone, anywhere, at any time.</p>
+        </div>
+        <div class="card">
+            <h3>Innovative Learning</h3>
+            <p>We create interactive and engaging courses with real-world applications.</p>
+        </div>
+        <div class="card">
+            <h3>Community Support</h3>
+            <p>We foster a global community of learners, mentors, and educators.</p>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 style="text-align:center; margin-bottom:50px;">Meet Our Team</h2>
+        <div class="team">
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+                <h4>John Doe</h4>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith">
+                <h4>Jane Smith</h4>
+                <p>Head of Curriculum</p>
+            </div>
+            <div class="member">
+                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Michael Lee">
+                <h4>Michael Lee</h4>
+                <p>Lead Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="values">
+        <h2 style="text-align:center; margin-bottom:50px;">Our Values</h2>
+        <div class="card">
+            <h3>Integrity</h3>
+            <p>We maintain the highest ethical standards in all our actions.</p>
+        </div>
+        <div class="card">
+            <h3>Excellence</h3>
+            <p>We strive for excellence in teaching, content, and technology.</p>
+        </div>
+        <div class="card">
+            <h3>Innovation</h3>
+            <p>We embrace creativity and continuously improve our learning solutions.</p>
+        </div>
+    </section>
+
+    
+{% endblock  %}

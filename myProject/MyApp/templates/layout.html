@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styleC.css' %}">
+    <link rel="stylesheet" href="{% static 'tweetnav.css' %}">
+    <title>{% block title %}Default{% endblock  %}</title>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a class="navbar-brand" href="{% url 'tweet_list' %}">Tweetbar</a>
+
+        <div class="nav-content">
+            <ul class="nav-links">
+                <li><a href="{% url 'tweet_list' %}">Tweet Home</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+
+            <form method='get' class="search-form" role="search">
+                {% csrf_token %}
+                <input type="text" name="tweets" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+
+            {% if user.is_authenticated %}
+                <form method="post" action="{% url 'logout' %}" class="logout-form">
+                    {% csrf_token %}
+                    <button type="submit" class="btn logout-btn">Logout</button>
+                </form>
+            {% else %}
+                <div class="auth-links">
+                    <a href="{% url 'register' %}" class="btn">Register</a>
+                    <a href="{% url 'login' %}" class="btn btn-outline">Login</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        {% block content %}
+            Default content
+        {% endblock  %}
+    </div>
+</body>
+</html>
