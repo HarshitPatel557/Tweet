@@ -158,13 +158,3 @@ Feel free to open an issue for feature ideas or bug reports.
 ## 📄 License
 
 This project is open-source and available under the **MIT License**.
-
----
-
-If you’d like, I can also create:
-✅ A better project description
-✅ A logo/banner for the top of the README
-✅ Badges (build status, Python version, etc.)
-✅ A more advanced README with GIF demos
-
-Just tell me!
