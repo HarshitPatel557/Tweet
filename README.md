@@ -27,25 +27,7 @@ This project is ideal for beginners looking to understand **Django CRUD**, **aut
 
 ---
 
-## 🗂️ Project Structure (Important App Files)
 
-```
-Tweet/
-├── tweetapp/
-│   ├── views.py
-│   ├── models.py
-│   ├── forms.py
-│   ├── urls.py
-│   ├── templates/
-│   │   ├── tweet_list.html
-│   │   ├── tweet_form.html
-│   │   ├── tweet_confirm_delete.html
-│   │   └── registration/
-│   │       └── register.html
-├── Tweet/      (main project)
-```
-
----
 
 ## 📸 Core Functionality (From views.py)
 
