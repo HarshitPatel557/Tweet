@@ -1,5 +1,3 @@
-
-
 # 🐦 Tweet — A Simple Django Tweeting App
 
 **Tweet** is a minimal Django-based web application that allows users to create, edit, delete, and browse tweet-like posts.
@@ -26,8 +24,6 @@ This project is ideal for beginners looking to understand **Django CRUD**, **aut
 * Auto-login after registration
 
 ---
-
-
 
 ## 📸 Core Functionality (From views.py)
 
