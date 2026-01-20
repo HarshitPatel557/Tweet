@@ -3,12 +3,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # path("page/",views.MyPage,name="Mypage"),
-    # path("about/",views.About,name="AdminPage"),
-    # path("form/",views.Forms,name="FormPage"),
-    # path("calculator/",views.Calcul,name="calcu"),
-    # path("marksheet/",views.Marks,name="marks"),
+    # path('admin/', admin.site.urls),
     path("home/", views.index,name="tweethome"),
     path("tweet/", views.tweet_list,name="tweet_list"),
     path("create/", views.tweet_create,name="tweet_create"),
@@ -17,3 +12,8 @@ urlpatterns = [
     path("register/", views.register,name="register"),
 
 ]
+    # path("page/",views.MyPage,name="Mypage"),
+    # path("about/",views.About,name="AdminPage"),
+    # path("form/",views.Forms,name="FormPage"),
+    # path("calculator/",views.Calcul,name="calcu"),
+    # path("marksheet/",views.Marks,name="marks"),
